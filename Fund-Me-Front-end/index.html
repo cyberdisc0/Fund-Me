@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fund Me App</title>
+</head>
+<body>
+    Hello!
+    <script src="./index.js" type="module">        
+    </script>
+    <button id="connect-btn"> Connect </button>
+    <button id="balance-btn"> Get Balance </button>
+    <button id="withdraw-btn"> Withdraw </button>
+    
+    <label for="fund"> ETH Amount </label>
+    <input id="ethAmount" placeholder="0.0"/>
+    <button id="fund", onclick="fund()"> Fund </button>
+</body>
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fund Me App</title>
+</head>
+<body>
+    Hello!
+    <script>
+        async function connect(){
+            if (typeof window.ethereum !== undefined) {
+                console.log("wallet detected")
+                await window.ethereum.request({ method: 'eth_requestAccounts' })
+                document.getElementById("connect-btn").innerHTML = "Connected"
+            } else {
+                console.log("no metamask")
+                document.getElementById("connect-btn").innerHTML = "Please Connect"
+            }
+        }
+    </script>
+    <button id="connect-btn", onclick="connect()">Connect</button>
+    
+</body>
+</html>
+-->
